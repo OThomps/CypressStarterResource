@@ -1,0 +1,24 @@
+{
+  "name": "v3cypress",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:dev": "cypress run --env environment=dev",
+    "test:qa": "cypress run --env environment=qa",
+    "test:prod": "cypress run --env environment=prod",
+    "test:open": "cypress open",
+    "test:open:dev": "cypress open --config-file cypress.dev.config.js",
+    "test:open:qa": "cypress open --config-file cypress.qa.config.js",
+    "test:open:prod": "cypress open --config-file cypress.prod.config.js",
+    "test:visual": "cypress run --env type=actual --spec 'cypress/e2e/tests/login.visual.cy.js'"
+  },
+  "keywords": [],
+  "author": "Owen Thompson",
+  "license": "ISC",
+  "description": "This is a starter project to quickly get started with Cypress in your project.",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-visual-regression": "^3.0.0"
+  }
+}
